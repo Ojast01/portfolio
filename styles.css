@@ -1,13 +1,13 @@
 /* --- Variables & Reset --- */
 :root {
-    --bg-color: #050505;
-    --surface-color: rgba(20, 20, 20, 0.7);
+    --bg-color: #020b14; /* Deep Navy / Almost Black */
+    --surface-color: rgba(6, 17, 33, 0.6); /* Slightly lighter navy with more transparency for glass effect */
     --primary-color: #00f3ff; /* Neon Cyan */
-    --primary-dim: rgba(0, 243, 255, 0.2);
-    --secondary-color: #cee8de; /* Minty tint */
-    --text-primary: #ffffff;
-    --text-secondary: #a0aab2;
-    --glass-border: rgba(255, 255, 255, 0.05);
+    --primary-dim: rgba(0, 243, 255, 0.15);
+    --secondary-color: #0055ff; /* Deep glowing blue */
+    --text-primary: #e0f2fe; /* Light blue-white */
+    --text-secondary: #94a3b8; /* Slate gray */
+    --glass-border: rgba(0, 243, 255, 0.1);
     
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -32,6 +32,17 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     cursor: none; /* Custom cursor */
+}
+
+/* --- Particle Background --- */
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* --- Custom Cursor --- */
@@ -268,7 +279,7 @@ h1, h2, h3, .logo {
 /* --- Skills Section --- */
 .skills {
     padding: 100px 10%;
-    background: linear-gradient(180deg, var(--bg-color) 0%, rgba(0, 243, 255, 0.02) 100%);
+    background: transparent;
 }
 
 .skills-container {

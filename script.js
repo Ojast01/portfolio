@@ -55,3 +55,65 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+// tsParticles Initialization
+tsParticles.load("tsparticles", {
+    fpsLimit: 60,
+    interactivity: {
+        events: {
+            onHover: {
+                enable: true,
+                mode: "grab",
+            },
+            resize: true,
+        },
+        modes: {
+            grab: {
+                distance: 200,
+                links: {
+                    opacity: 0.5,
+                    color: "#00f3ff"
+                }
+            }
+        },
+    },
+    particles: {
+        color: {
+            value: ["#00f3ff", "#0055ff"],
+        },
+        links: {
+            color: "#00f3ff",
+            distance: 150,
+            enable: true,
+            opacity: 0.3,
+            width: 1,
+        },
+        move: {
+            direction: "none",
+            enable: true,
+            outModes: {
+                default: "bounce",
+            },
+            random: true,
+            speed: 0.8,
+            straight: false,
+        },
+        number: {
+            density: {
+                enable: true,
+                area: 800,
+            },
+            value: 60,
+        },
+        opacity: {
+            value: 0.7,
+        },
+        shape: {
+            type: "circle",
+        },
+        size: {
+            value: { min: 1, max: 3 },
+        },
+    },
+    detectRetina: true,
+});
