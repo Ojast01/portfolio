@@ -1,17 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-background: #050505;
+  --color-cyanGlow: #00F5FF;
+  --color-whiteText: #F5F5F5;
+  --color-softGray: #A0A0A0;
+}
 
 @layer base {
   body {
-    @apply bg-background text-whiteText font-sans;
+    background-color: var(--color-background);
+    color: var(--color-whiteText);
     cursor: default;
   }
 }
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_0_15px_rgba(0,245,255,0.05)];
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 245, 255, 0.05);
   }
   
   .text-glow {
