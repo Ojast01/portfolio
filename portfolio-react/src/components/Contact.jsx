@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function Contact() {
   return (
@@ -32,7 +33,7 @@ export default function Contact() {
             <div className="hidden md:block w-px h-8 bg-white/20"></div>
             
             <a href="https://www.linkedin.com/in/ojas-tyagi-218427315" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-softGray hover:text-cyanGlow transition-colors">
-              <Linkedin size={24} />
+              <FaLinkedin size={24} />
               <span>LinkedIn Profile</span>
             </a>
           </div>

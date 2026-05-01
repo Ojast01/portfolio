@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 const projects = [
   {
@@ -58,7 +59,7 @@ export default function Projects() {
                 <h3 className="text-2xl font-bold text-whiteText group-hover:text-cyanGlow transition-colors">{project.title}</h3>
                 <div className="flex gap-3">
                   <a href={project.github} target="_blank" rel="noreferrer" className="text-softGray hover:text-cyanGlow transition-colors">
-                    <Github size={20} />
+                    <FaGithub size={20} />
                   </a>
                 </div>
               </div>

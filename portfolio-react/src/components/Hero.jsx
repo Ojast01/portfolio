@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Hero() {
   return (
@@ -55,7 +56,7 @@ export default function Hero() {
           </a>
           
           <a href="https://github.com/Ojast01" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-8 py-3 text-base font-bold text-cyanGlow border border-cyanGlow rounded-full transition-all hover:bg-cyanGlow/10 hover:scale-105">
-            <Github size={18} className="mr-2" /> GitHub
+            <FaGithub size={18} className="mr-2" /> GitHub
           </a>
         </motion.div>
 
