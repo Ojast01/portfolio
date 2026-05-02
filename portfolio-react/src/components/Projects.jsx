@@ -27,6 +27,30 @@ const projects = [
     description: "A robust SQL-based analytics engine designed to process and analyze large datasets efficiently.",
     tech: ["SQL", "MySQL", "Database Design"],
     github: "https://github.com/Ojast01/SQL-Analytics-Engine-master"
+  },
+  {
+    title: "Real-Time Chat Application",
+    description: "Architected a robust client-server chat system enabling multiple users to communicate reliably and simultaneously via TCP/IP socket programming. Engineered a concurrent, multithreaded backend architecture preventing data races and dropped connections.",
+    tech: ["C++", "POSIX Sockets", "Multithreading"],
+    github: "https://github.com/Ojast01"
+  },
+  {
+    title: "Stock Trading & Portfolio Simulator",
+    description: "Designed an automated algorithmic trading bot utilizing a Moving Average strategy to autonomously detect trends and execute mathematically driven decisions. Optimized core logic with encapsulated, modular data structures for fast transaction validation and balance tracking.",
+    tech: ["C++", "Object-Oriented Design", "DSA"],
+    github: "https://github.com/Ojast01"
+  },
+  {
+    title: "Gym Locator",
+    description: "Built a location-based gym discovery platform with real-time search and filtering capabilities and enhanced user decision-making by integrating ratings, reviews, and facility comparisons. Built a responsive UI using modern React practices for a seamless experience.",
+    tech: ["React.js", "JavaScript", "HTML5", "CSS3", "REST APIs", "Geolocation API"],
+    github: "https://github.com/Ojast01"
+  },
+  {
+    title: "Student Performance Predictor",
+    description: "Developed a predictive model using Python and Pandas to analyze and forecast student academic performance based on historical data. Built a responsive web interface with HTML5 and CSS3 for data visualization and intuitive user interaction.",
+    tech: ["Python", "Pandas", "HTML5", "CSS3"],
+    github: "https://github.com/Ojast01"
   }
 ];
 
